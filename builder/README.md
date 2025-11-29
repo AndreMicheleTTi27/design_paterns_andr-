@@ -18,6 +18,10 @@ Necessitando criar uma classe HeroBuilder, dedicada exclusivamente para montar o
 
 ---
 
+### 📐 Diagrama UML
+A estrutura de classes abaixo demonstra como o `HeroBuilder` isola a complexidade da criação do `Hero`:
+
+```mermaid
 classDiagram
     class Hero {
         +name: str
@@ -37,8 +41,8 @@ classDiagram
     }
 
     HeroBuilder ..> Hero : Cria (Dependency)
-
-    ---
+    
+---
 
 ## Explicação do Código
 Tendo assim uma classe para hero: 
