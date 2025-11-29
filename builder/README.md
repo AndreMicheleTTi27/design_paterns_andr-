@@ -14,8 +14,11 @@ Em um jogo de rpg, o personagem (**Hero**) é uma entidade complexa. Ele tem:
 * Armadura (pode ser nenhuma)
 * Nível, XP, Inventário, Habilidades...
 
-Necessitando criar uma classe HeroBuilder, dedicada exclusivamente para montar o seu herói. 
+Necessitando criar uma classe HeroBuilder, dedicada exclusivamente para montar o seu herói.
 
+---
+
+## Explicação do Código
 Tendo assim uma classe para hero: 
 
 class Hero:
