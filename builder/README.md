@@ -6,7 +6,7 @@ Padrão de Projeto: Builder
 
 ---
 
-## ⚔️ O Cenário (Problema)
+## Cenário 
 Imagine que estamos criando um jogo de RPG. Um personagem (**Hero**) é uma entidade complexa. Ele tem:
 * Nome
 * Classe (Mago, Guerreiro, Arqueiro)
