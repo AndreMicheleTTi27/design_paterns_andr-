@@ -60,5 +60,6 @@ class HeroBuilder:
 Permitindo criar heróis de forma legível:
 
 # Uso final limpo e claro:
+
 builder = HeroBuilder()
 meu_heroi = builder.set_name("Otavio").set_role("Mago").build()
