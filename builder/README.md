@@ -18,6 +18,28 @@ Necessitando criar uma classe HeroBuilder, dedicada exclusivamente para montar o
 
 ---
 
+classDiagram
+    class Hero {
+        +name: str
+        +role: str
+        +weapon: str
+        +armor: str
+        +__str__()
+    }
+
+    class HeroBuilder {
+        -hero: Hero
+        +set_name(name)
+        +set_role(role)
+        +equip_weapon(weapon)
+        +equip_armor(armor)
+        +build() : Hero
+    }
+
+    HeroBuilder ..> Hero : Cria (Dependency)
+
+    ---
+
 ## Explicação do Código
 Tendo assim uma classe para hero: 
 
