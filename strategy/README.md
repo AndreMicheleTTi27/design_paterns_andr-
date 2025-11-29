@@ -13,7 +13,7 @@ Se tentássemos colocar toda a lógica de ataque dentro da classe `Hero`, tería
 
 ---
 
-### 📐 Diagrama UML
+### Diagrama UML
 A estrutura abaixo mostra como isolamos os algoritmos de ataque em classes separadas:
 
 ```mermaid
