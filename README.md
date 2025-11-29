@@ -26,11 +26,11 @@ O projeto está estruturado em três diretórios principais, cada um focado em u
 
 ---
 
-## 📦 Conteúdo dos Diretórios
+## Conteúdo dos Diretórios
 
 Cada pasta deste repositório funciona como um módulo independente contendo:
-* 🐍 **Código Fonte (.py):** A implementação funcional do padrão em Python.
-* 📄 **Documentação Dedicada (README):** Um guia explicativo contendo:
+* **Código Fonte (.py):** A implementação funcional do padrão em Python.
+* **Documentação Dedicada (README):** Um guia explicativo contendo:
     * **Cenário:** O problema específico do RPG que precisava ser resolvido.
     * **Solução:** Como o padrão resolve o problema.
     * **Diagrama UML:** Representação visual da estrutura das classes.
@@ -38,7 +38,8 @@ Cada pasta deste repositório funciona como um módulo independente contendo:
 
 ---
 
-## 📚 Referências e Créditos
+## Referências e Créditos
 
 * **Fonte Teórica:** Todo o embasamento conceitual, definições e modelos de diagramas UML foram baseados no catálogo do [Refactoring Guru](https://refactoring.guru/pt-br/design-patterns).
-* **Implementação:** Código desenvolvido com auxílio de ferramentas de LLM (Google Gemini) para refatoração e revisão de boas práticas.
+* **Referência Técnica:** Consulta a exemplos de implementações idiomáticas em Python no repositório [faif/python-patterns](https://github.com/faif/python-patterns).
+* **Apoio no Desenvolvimento:** Código desenvolvido e refatorado com auxílio de ferramentas de LLM (Google Gemini) para revisão de boas práticas, ajuda em UML e documentação.
