@@ -6,7 +6,7 @@
 
 ---
 
-## ⚔️ Cenário (O Problema)
+## Cenário 
 Em um jogo de RPG, o personagem (**Hero**) é uma entidade complexa. Ele tem:
 * Nome
 * Classe (Mago, Guerreiro, Arqueiro)
@@ -18,26 +18,75 @@ Isso cria a necessidade de uma classe `HeroBuilder`, dedicada exclusivamente par
 
 ---
 
-### 📐 Diagrama UML
+### Diagrama UML
 A estrutura de classes abaixo demonstra como o `HeroBuilder` isola a complexidade da criação do `Hero`:
 
 ```mermaid
 classDiagram
     class Hero {
-        +name: str
-        +role: str
-        +weapon: str
-        +armor: str
+        +name
+        +role
+        +weapon
+        +armor
         +__str__()
     }
 
     class HeroBuilder {
-        -hero: Hero
+        -hero
         +set_name(name)
         +set_role(role)
         +equip_weapon(weapon)
         +equip_armor(armor)
-        +build() : Hero
+        +build()
     }
 
-    HeroBuilder ..> Hero : Cria (Dependency)
+    HeroBuilder ..> Hero : Cria
+
+```
+
+---
+
+### Explicação do Código
+Classe Produto (Hero):
+
+Primeiro, temos a classe que serve apenas como modelo de dados para o herói:
+
+```
+class Hero:
+    def __init__(self):
+        # Inicializa tudo como vazio (None)
+        self.name = None
+        self.role = None
+        self.weapon = None
+        self.armor = None
+
+    def __str__(self):
+        # Método para imprimir o herói bonitinho no terminal
+        return f"Herói [{self.name}] | Classe: {self.role} | Arma: {self.weapon} | Armadura: {self.armor}"
+```
+
+Classe Construtora (HeroBuilder):
+
+Utilizamos a classe HeroBuilder. Ela utiliza métodos que retornam o próprio objeto (self) a cada etapa, 
+permitindo a configuração das características do herói passo a passo, de forma organizada e legível:
+
+```
+class HeroBuilder:
+    def __init__(self):
+        self.hero = Hero() 
+
+    def set_name(self, name: str):
+        self.hero.name = name
+        return self
+
+    def set_role(self, role: str):
+        self.hero.role = role
+        return self
+
+    def build(self) -> Hero:
+        result = self.hero
+        self.hero = Hero() 
+        return result
+
+```
+
