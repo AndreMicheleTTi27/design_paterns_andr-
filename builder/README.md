@@ -7,14 +7,14 @@ Padrão de Projeto: Builder
 ---
 
 ## Cenário 
-Imagine que estamos criando um jogo de RPG. Um personagem (**Hero**) é uma entidade complexa. Ele tem:
+Em um jogo de rpg, o personagem (**Hero**) é uma entidade complexa. Ele tem:
 * Nome
 * Classe (Mago, Guerreiro, Arqueiro)
 * Arma (pode ser nenhuma)
 * Armadura (pode ser nenhuma)
 * Nível, XP, Inventário, Habilidades...
 
-Criando uma classe HeroBuilder, dedicada exclusivamente para montar o seu herói. 
+Necessitando criar uma classe HeroBuilder, dedicada exclusivamente para montar o seu herói. 
 
 Tendo assim uma classe para hero: 
 
@@ -61,4 +61,5 @@ Permitindo criar heróis de forma legível:
 # Uso final limpo e claro:
 
 builder = HeroBuilder()
-meu_heroi = builder.set_name("Otavio").set_role("Mago").build()
+meu_heroi = builder.set_name("wise wisard").set_role("Mago").build()
+print(meu_heroi)
