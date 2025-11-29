@@ -43,7 +43,6 @@ class HeroBuilder:
     def __init__(self):
         self.hero = Hero() # O objeto começa vazio
 
-    # Métodos que configuram e retornam o próprio construtor (self)
     def set_name(self, name: str):
         self.hero.name = name
         return self
